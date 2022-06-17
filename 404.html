@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" xml:lang="en">
 <head>
-  <title>Motion Projects - SYmedia</title>
+  <title>404 - SYmedia</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css?family=Rubik:400,500,600,800&amp;display=swap%22%" rel="stylesheet">
@@ -24,9 +24,6 @@
   <meta property="og:image" content="image">
   <meta property="og:image:width" content="1280">
   <meta property="og:image:height" content="720">
-  <meta itemprop="name" content="Save Yourself Media - Media Designer">
-  <meta itemprop="description" content="Hi, I'm Sy (Save Yourself). I'm a UK based visual media communicator designing visuals for the world ♡">
-  <meta itemprop="image" content="https://saveyourself.media/images/metaBanner.webp">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://saveyourself.media/images/metaBanner.webp">
   <meta name="twitter:creator" content="@0symedia">
@@ -34,11 +31,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://kit.fontawesome.com/3c6f6f5ebb.js"></script>
   <script src="global.js"></script>
+  <style>
+    .content {
+      text-align:center;
+    }
+
+    img {
+      float:none;
+      display:inline-block;
+    }
+
+    h1 {
+      font-size:36px;
+    }
+
+    span {
+      margin:10px;
+    }
+
+    .head {
+	    display:flex;
+	    justify-content:center;
+	    align-items:center;
+	    width:100%;
+	    height:calc(100vh - 70px);
+      margin-top:-85px;
+    }
+    
+    .box {
+      display:inline-block;
+      width:1150px;
+      z-index:1;
+    }
+  </style>
 </head>
 <body>
-  <div class="warn">
-    <h2>Hi! The site is still in heavy development!<br>Expect bugs and bad compatability</h2>
-  </div>
   <div id="navBar">
     <div class="internalNav">
       <a href="index.html" class="navLogo" alt="SYmedia Logo"><img src="images/SYmediaGreenLogo.svg" width=50px></a>
@@ -54,40 +81,16 @@
   </div>
   <div class="content">
     <div class="breadcrumbs">
-      <a href="portfolio.html" class="back">< back</a>
-      <a href="index.html">home</a>
-      <span>/</span>
-      <a href="portfolio.html">portfolio</a>
-      <span>/</span>
-      <a href="motion.html">motion</a>
+      <a href="javascript:history.back()" class="back">< back</a>
     </div>
-    <h1 class="greenBox">Motion Projects</h1><br>
-    <span>A collection of large motion projects I've made</span><br>
-  </div>
-  <div class="footer">
-    <div class="footerContainer">
-      <div class="footerSection">
-        <h1 class="greenBox">Find SY</h1><br>
-        <a href="https://www.youtube.com/channel/UClyOJMw3hkr2dk4PKcpAuFw?sub_confirmation=1" target="_blank"><i class="fab fa-youtube" aria-hidden="true"></i> YouTube</a>
-        <a href="https://twitter.com/_symedia" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i> Twitter <strong>(@_symedia)</strong></a>
-        <a href="mailto:saveyourselfmedia@gmail.com" target="_blank"><i class="fas fa-envelope" aria-hidden="true"></i> Email <strong>(sy@saveyourself.media)</strong></a>
-        <hr>
-        <span>© 2022 Save Yourself Media (SY Media)<br>All rights reserved</span>
-      </div>
-      <div class="footerSection">
-        <h1 class="pinkBox">Portfolio</h1><br>
-        <a href="/sybrand.html">⭐ Save Yourself Branding</a>
-        <a href="/portfolio/motion.html">• Motion Projects</a>
-        <a href="/portfolio/logos.html">• Logos</a>
-        <a href="/portfolio/ahintofcolour.html">• Renders</a>
-        <a href="/portfolio/riptide.html">• Advent</a>
-      </div>
-      <div class="footerSection">
-        <h1 class="greenBox">Sitemap</h1><br>
-        <a href="about.html">• About</a>
-        <a href="licensing.html">• Licensing</a>
-        <a href="changelog.html">• Changelog</a>
-        <a href="contact.html">• Contact Me</a>
+    <div class="head">
+      <div class="box">
+        <img src="images/404.webp">
+        <h1>You're lost... but you can <b>save yourself!</b></h1>
+        <span>That's awkward. Why don't we try <a href="javascript:history.back()">going back to the last page</a> or give one of these a go! </span><br>
+        <a class="btn" href="https://saveyourself.media">Home</a>
+        <a class="btn" href="portfolio.html">Portfolio</a>
+        <a class="btn" href="contact.html">Contact</a>
       </div>
     </div>
   </div>

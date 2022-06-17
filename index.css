@@ -10,11 +10,6 @@
     margin-bottom:20px;
 }
 
-.head lottie-player {
-    display:block;
-    position:absolute;
-}
-
 .box {
 	display:inline-block;
 	width:1150px;
@@ -30,7 +25,7 @@
 	display:inline-block;
 	color:#3CFFA4;
 	transform:rotate(-2deg);
-    animation: 2.4s elementIn
+    animation: 0.4s elementIn
 }
 
 .box h2 {
@@ -39,34 +34,15 @@
 	color:#FF4A8F;
 	margin: 5px 0 25px 2px;
 	transform:rotate(-2deg);
-    animation: 2.5s elementIn
+    animation: 0.8s elementIn
 }
 
 .box .btn {
-    animation: 2.7s elementIn
-}
-
-.darkenBlock {
-    position:absolute;
-    display:block;
-    background:black;
-    width:100vw;
-    height:600px;
-    opacity:0;
-    animation: 2.3s fadeIn;
-    z-index:0;
-}
-
-@keyframes fadeIn {
-    0%{opacity:0.5}
-    75%{opacity:0.5}
-    100%{}
+    animation: 1.2s elementIn
 }
 
 @keyframes elementIn {
-    0%{opacity:0; transform:scale(0,0)}
-    74%{opacity:0; transform:scale(0,0)}
-    75%{opacity:0; transform:translate(0,20px)}
+    0%{opacity:0; transform:translate(0,20px)}
     100%{}
 }
 

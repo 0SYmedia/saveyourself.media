@@ -1,0 +1,35 @@
+.releaseBox {
+    background-color:#171727;
+    margin:10px 0;
+    padding:15px 25px;
+}
+
+.tag {
+    float:left;
+    background-color:#2d2d4d;
+    padding:8px 15px;
+    margin:0 10px 8px -2px;
+    border-radius: 20px;
+    font-weight:600;
+    cursor:default;
+}
+
+.version {
+    color:#fff;
+    background-color:#444451;
+}
+
+.major {
+    color:#3de66a;
+    background-color:#1d3430
+}
+
+.early {
+    color:#FFA642;
+    background-color:#44332c
+}
+
+.fix {
+    color:#d386ff;
+    background-color:#3b2c51;
+}

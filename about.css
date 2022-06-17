@@ -1,0 +1,64 @@
+.aboutBox {
+    float:left;
+    background-color: #171727;
+    padding:10px 25px 10px 25px;
+    width:535px;
+    height:150px;
+    margin:10px 0 10px 0;
+    color:white;
+}
+
+.aboutBox span {
+    font-size:18px;
+}
+
+.aboutBox .bigNumContainer {
+    display:inline-block;
+    width:337px;
+    vertical-align:middle;
+}
+
+.aboutBox h1 {
+    display:inline-block;
+    font-size:170px;
+    margin: -25px 30px 0 -10px;
+    line-height:200px;
+    letter-spacing:-8px;
+    vertical-align:middle;
+    max-width:170px;
+    height:170px;
+    color:#ff4a8f;
+}
+
+.aboutBox h2 {
+    font-size:32px;
+    color:#3cffa4
+}
+
+.aboutBox img {
+    width:100px;
+    height:100px;
+    margin:19px 0 5px 0;
+}
+
+.betweenBox {
+    float:left;
+    width:20px;
+    height:20px;
+}
+
+.miniBox {
+    display:flex;
+    align-items: center;
+    text-align:center;
+    width:142px;
+    padding:0px 20px 20px 20px;
+}
+
+.miniBox h1 {
+    font-size:110px;
+    margin: 8px 0 -4px -10px;
+    line-height:110px;
+    height:auto;
+    width:auto;
+}
