@@ -37,13 +37,10 @@
   <script src="global.js"></script>
 </head>
 <body>
-  <div class="warn">
-    <h2>Hi! The site is still in heavy development!<br>Expect bugs and bad compatability</h2>
-  </div>
   <div id="navBar">
     <div class="internalNav">
       <a href="index.html" class="navLogo" alt="SYmedia Logo"><img src="images/SYmediaGreenLogo.svg" width=50px></a>
-      <a href="portfolio.html" class="navLink">Work</a>
+      <a href="portfolio.html" class="navLink">Portfolio</a>
       <a href="about.html" class="navLink">About</a>
       <a href="contact.html" class="navLink">Contact</a>
       <div class="socials">
@@ -57,15 +54,33 @@
     <div class="breadcrumbs">
       <a href="index.html" class="back">< back</a>
       <a href="index.html">home</a>
-      <span>/</span>
+      <span>></span>
       <a href="changelog.html" class="here">changelog</a>
     </div>
     <h1 class="greenBox">Changelog</h1><br>
     <a class="btn" href="https://github.com/0SYmedia/saveyourself.media">Repository <i class="fab fa-github"></i></a>
     <div class="releaseBox">
+      <h1>25/6/22 - 3rd Snapshot</h1>
+      <!--tags-->
+      <span class="tag version">0.3</span>
+      <span class="tag major">Major Release</span>
+      <span class="tag early">Early Release</span>
+      <span class="tag fix">Bug Fix</span>
+      <span>This update changes a few miscellaneous things such as directories and finished parts. I'm sure you've noticed a big gap between the dates of these snapshots and snapshot 1 being distant. Answer: I had exams and wasn't working on this. I think I might be able to release a beta once I finish mobile support which is next.</b><ul>
+        <li>Added directory subfolder for portfolio content instead of EVERYTHING being in root</li>
+        <li>Added (highly unfinished) contact page</li>
+        <li>Completely revamped about page and need to add a little more content</li>
+        <li>Improved the appearance of breadcrumbs so they feel more flush, separating the back button</li>
+        <li>Fixed a bug where 404 pages wouldn't load CSS because it's in current directory and not root. Pointed to root manually.</li>
+        <li>Changed version number system from x.x.x to just x.x ~ bugfixes may be appended like this 0.3 --> 0.31</li>
+        <li>Added repository links for every major website release.</li>
+        <li>Unfortunately, I didn't know how GitHub releases worked when I made .1 but .2 has been given it's own GitHub release along and 0.3 will after. This allows you to completely access prior releases with ease. The way this works is once a new main branch has been uploaded, the prior will be put into a release featuring any bugfixes that allowed it. I know this might seem counterproductive aside just setting every change as a release but this feels wasteful. The changelog will show these individually for any update with it's respective version number.</li>
+      </ul></span><br>
+    </div>
+    <div class="releaseBox">
       <h1>17/6/22 - 2nd Snapshot</h1>
       <!--tags-->
-      <span class="tag version">0.2.0</span>
+      <span class="tag version">0.2</span>
       <span class="tag major">Major Release</span>
       <span class="tag early">Early Release</span>
       <span class="tag fix">Bug Fix</span>
@@ -83,7 +98,7 @@
     <div class="releaseBox">
       <h1>7/4/22 - 1st Snapshot</h1>
       <!--tags-->
-      <span class="tag version">0.1.0</span>
+      <span class="tag version">0.1</span>
       <span class="tag major">Major Release</span>
       <span class="tag early">Early Release</span>
       <span>This is the first snapshot of the website published on the <a href="saveyourself.media">saveyourself.media</a> domain. However this only features: <ul>

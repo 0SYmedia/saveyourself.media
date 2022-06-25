@@ -14,8 +14,8 @@
 }
 
 ::selection {
-  color: #FF4A8F;
-  background: white;
+  background: #af1a53;
+  color: white;
 }
 
 body {
@@ -94,7 +94,6 @@ ul {
 	width:100%;
 	z-index:25;
 	text-align:center;
-	background-color:#0a0a11;
 	box-shadow: 0 0 30px #00000000;
 	font-family:rubik;
 	transition:0.2s;
@@ -103,7 +102,7 @@ ul {
 .navLogo {
 	float:left;
 	padding:21px 0 !important;
-	width:300px;
+	margin:0 250px 0 0;
 	text-align:left;
 }
 
@@ -147,6 +146,10 @@ ul {
 	color:#09080f
 }
 
+.internalNav .active {
+	color:#3cffa4;
+}
+
 .btn {
 	display:inline-block;
 	font-size:24px;
@@ -155,18 +158,18 @@ ul {
 	color:#09080F;
 	border:2px solid #af1a53;
 	padding:12px 22px;
-	margin:4px 0 6px 4px;
-	box-shadow: 4px 4px 0px #0c0b14aa;
+	margin:20px 5px 15px 5px;
+	box-shadow: 4px 4px 0px #000000aa;
 	border-radius:200px;
 	font-weight:500;
-	letter-spacing:-0.5px;
+	letter-spacing:-0.3px;
 	transition:0.3s cubic-bezier(.13,2,.26,.87);
 }
 
 .btn:hover {
 	background-color:#ff6da5;
 	transform:translate(-2px,-2px);
-	box-shadow: 6px 6px 0px #0c0b14aa;
+	box-shadow: 6px 6px 0px #000000aa;
 }
 
 .btn:active {
@@ -174,7 +177,6 @@ ul {
 	box-shadow: 0px 0px 0px #0c0b14aa;
 	background-color:#3CFFA4;
 	border:2px solid #009155;
-
 }
 
 .content {
@@ -182,6 +184,85 @@ ul {
 	width:1208px;
 	height:300px;
 	text-align:left;
+}
+
+.projectBox {
+    float:left;
+    background-color:#06050a;
+    width:390px;
+    height:320px;
+    margin:6px;
+    box-shadow: 0px 0px #FF4A8F;
+    transform:translate(0,0);
+    transition:0.4s cubic-bezier(.13,2,.26,.87), 0.2s box-shadow cubic-bezier(.05,.8,.31,.92);
+}
+
+.projectBox:hover {
+    transform:translate(-5px, -5px);
+    box-shadow: 5px 5px #FF4A8F
+}
+
+.projectBox:active {
+    transform:translate(0, 0);
+    box-shadow: 0 0 #FF4A8F
+}
+
+.projectBox * {
+    transition:0.2s;
+}
+
+.projectBox img {
+    width:100%;
+    height:100%;
+}
+
+.projectBox h1 {
+    position:absolute;
+    left:26px;
+    bottom:24px;
+    text-decoration:none;
+    z-index:120;
+    opacity:0;
+    font-size:40px;
+    background-color:#09080f;
+    color:#3cffa4
+}
+
+.projectBox:hover h1 {
+    opacity:1;
+    bottom:40px;
+    left:20px;
+}
+
+.projectBox span {
+    position:absolute;
+    left:26px;
+    bottom:4px;
+    text-decoration:none;
+    z-index:120;
+    opacity:0;
+    font-size:15px;
+    color:#ffffff80
+}
+
+.projectBox:hover span {
+    opacity:1;
+    bottom:20px;
+    left:20px;
+}
+
+.projectBoxDarkness {
+    display:inline-block;
+    position:absolute;
+    width:390px;
+    height:320px;
+    margin-bottom:-320px;
+    background-color:#3cffa400;
+    z-index:100;
+}
+
+.projectBox:hover .projectBoxDarkness{
+    background-color:#47041e99;
 }
 
 lottie-player {
@@ -208,16 +289,18 @@ lottie-player {
 .greenBox {
 	display:inline-block;
 	color:#09080F;
-	margin:15px 0;
+	margin:40px 0 30px;
 	background-color:#3CFFA4;
+	padding:2px;
 	transform:rotate(2deg)
 }
 
 .pinkBox {
 	display:inline-block;
 	color:#09080F;
-	margin:15px 0;
+	margin:40px 0 30px;
 	background-color:#FF4A8F;
+	padding:2px;
 	transform:rotate(-2deg)
 }
 
@@ -225,7 +308,7 @@ lottie-player {
 	position:relative;
     text-align:center;
     margin-top:45px;
-    padding:20px 0 25px 0;
+    padding:5px 0 30px 0;
     background-color:#06050a;
 }
 
@@ -289,26 +372,29 @@ lottie-player {
 
 .breadcrumbs {
 	display:inline-block;
-	width:calc(100% - 76px);
 	text-align:center;
-	margin:5px 0;
+	width:100%;
+	margin:8px 0;
 	cursor:default;
+	z-index:1;
 }
 
 .breadcrumbs * {
+	vertical-align:bottom;
 	text-decoration:none;
-	color: #dedeee;
-	margin:0 2px;
+	color:#09080f;
+	background-color:#ff4a8f;
+	padding: 0 10px;
+	margin:-2px;
+	vertical-align:middle;
 	font-size:20px;
+	line-height:45px;
+	transition:0.1s;
 }
 
 .breadcrumbs a {
-	display:inline-block;
-	background-color:#ff4a8f;
-	color:#09080f;
 	font-family:Urbanist;
 	cursor:pointer;
-	padding:8px;
 }
 
 .breadcrumbs a:hover {
@@ -318,5 +404,11 @@ lottie-player {
 
 .back {
 	float:left;
-	cursor:pointer
+	cursor:pointer;
+	margin:0 -82px 0 0;
+	background-color:#3cffa4;
+}
+
+.back:hover {
+	background-color:#9bffd0 !important
 }

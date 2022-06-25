@@ -4,7 +4,7 @@ function scrollFunction() {
     document.getElementById("navBar").style.backgroundColor = "#0a0a11";
     document.getElementById("navBar").style.boxShadow = "0 0 30px #000000";
   } else {
-    document.getElementById("navBar").style.backgroundColor = "#0a0a11";
+    document.getElementById("navBar").style.backgroundColor = "#0a0a1100";
     document.getElementById("navBar").style.boxShadow = "0 0 30px #00000000";
   }
 }

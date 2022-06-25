@@ -62,3 +62,119 @@
     height:auto;
     width:auto;
 }
+
+.aboutContainer {  
+    display: grid;
+    height:750px;
+    width:96%;
+    margin:0 0 -80px 0;
+    grid-template-columns: 19% 19% 24% 19% 19%;
+    grid-template-rows: 25% 32.6% 17.4% 10%;
+    gap: 12px 12px;
+    grid-auto-flow: row;
+    grid-template-areas: 
+    "years ps ae pdn bln"
+    "years programmer sy dzn ai"
+    "vscode programmer uk dzn ."
+    "vscode . uk . ."; 
+}
+  
+.years { 
+   grid-area: years; 
+}
+
+.years h1 {
+    font-size:90px !important;
+    color:#3cffa4
+}
+
+.years h2 {
+    color:#3cffa4;
+    position:absolute;
+    float:right;
+    width:20px;
+    margin:10px 0 0 10px;
+}
+
+.ps { 
+   grid-area: ps;
+}
+
+.ae { 
+   grid-area: ae;
+}
+
+.vscode { 
+   grid-area: vscode;
+}
+
+.programmer { 
+   grid-area: programmer; 
+}
+
+.sy { 
+   grid-area: sy;
+}
+
+.uk { 
+   grid-area: uk; 
+}
+
+.pdn { 
+   grid-area: pdn;
+}
+
+.bln { 
+   grid-area: bln;
+}
+
+.dzn { 
+   grid-area: dzn; 
+}
+
+.ai { 
+   grid-area: ai;
+}
+
+.aboutContainer div {
+    background-color:#171727;
+    border-radius:5px;
+    border:3px solid #1e1e33;
+    padding:7px 14px 7px 14px;
+}
+
+.aboutContainer div * {
+    display:inline-block;
+}
+
+.aboutContainer h1 {
+    display:inline-block; 
+    font-size:50px;
+}
+
+.aboutContainer h2 {
+    font-size:24px;
+}
+
+.aboutContainer span {
+    font-size:18px;
+}
+
+.aboutContainer img {
+    width:135px;
+    margin: 0 0 5px 0
+}
+
+.ps, .vscode, .ae, .sy, .pdn, .ai, .bln {
+    text-align:center;
+}
+
+.sy img {
+    height:100%;
+    width:180px;
+}
+
+.programmer h1, .uk h1, .dzn h1 {
+    font-size:32px;
+    margin: 0 0 10px 0
+}
